@@ -1,0 +1,16 @@
+[2025-03-01 19:31:30] Démarrage du processus de sauvegarde...
+[2025-03-01 19:31:30] Vérification de l'espace disque...
+[2025-03-01 19:31:30] Vérification de l'état de MySQL...
+[2025-03-01 19:31:30] MySQL fonctionne correctement
+[2025-03-01 19:31:30] Sauvegarde de toutes les bases de données...
+[2025-03-01 19:31:30] Sauvegarde brute terminée: 3,7M
+[2025-03-01 19:31:30] Sauvegarde compressée: 848K
+[2025-03-01 19:31:30] Somme de contrôle SHA256 calculée et stockée dans ./backup/all_databases_20250301_193130.sql.gz.sha256
+[2025-03-01 19:31:30] ERREUR: Type de stockage distant non configuré
+[2025-03-01 19:31:30] Sauvegarde terminée avec succès: ./backup/all_databases_20250301_193130.sql.gz
+[2025-03-01 19:31:30] Nettoyage des sauvegardes de plus de 30 jours...
+[2025-03-01 19:31:30] Nettoyage terminé
+[2025-03-01 19:31:30] RÉSUMÉ DE LA SAUVEGARDE:
+[2025-03-01 19:31:30]   - Bases sauvegardées: 'Toutes'
+[2025-03-01 19:31:30]   - Taille totale du répertoire de sauvegarde: 2,5M
+[2025-03-01 19:31:30]   - Nombre total de sauvegardes:        5
