@@ -116,9 +116,14 @@ mysql -h127.0.0.1 -P3306 -uapp_user -p application_db
 
 ## Sauvegarde et restauration
 
+Les scripts utilisent le MySQL dans le conteneur Docker, aucune installation locale de MySQL n'est nécessaire.
+
 ### Créer une sauvegarde
 
 ```bash
+# S'assurer que les scripts sont exécutables
+chmod +x scripts/backup.sh scripts/restore.sh
+
 # Sauvegarde complète
 ./scripts/backup.sh
 
@@ -135,6 +140,8 @@ mysql -h127.0.0.1 -P3306 -uapp_user -p application_db
 # Restauration dans une base spécifique
 ./scripts/restore.sh backup/application_db_20250301_120000.sql.gz application_db
 ```
+
+Les scripts vérifient automatiquement que le conteneur MySQL est en cours d'exécution et utilisent la commande `docker exec` pour interagir avec MySQL à l'intérieur du conteneur.
 
 ## Schéma de base de données
 
